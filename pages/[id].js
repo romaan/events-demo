@@ -28,6 +28,7 @@ export default function Event() {
         <div>Time: {event.Time}</div>
         <div>Image: {event.Image}</div>
         <div>Location: {event.Location.City} {event.Location.State} {event.Location.Country}</div>
+        <div>Available Seat: {event.AvailableSeats.map(seat => <span> {seat.id} </span>)}</div>
         </>
       ))}
     </div>
